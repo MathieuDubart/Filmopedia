@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8" lang="fr">
+        <link rel="stylesheet" href="style.css">
+        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div id="pageContainer">
+            <div id="titleContainer">
+                <p>Filmopedia</p>
+            </div>
+            
+            <div id="formContainer">
+                <form id="submitForm">
+                    Movie's name: <br/>
+                    <input id="movieName" type="text" placeholder="Enter movie's name" required> <br/><br/> 
+                    Movie's author: <br/>
+                    <input id="movieAuthor" type="text" placeholder="Enter author's name" required> <br/><br/> 
+                    Movie's Poster <br/>
+                    <input id="movieImg" type="url" placeholder="Enter image's url" required> <br/><br/> 
+                    Movie's Trailer <br/>
+                    <input id="movieVideo" type="url" placeholder="Enter video's url" required> <br/><br/> 
+                    Movie's category <br/>
+                    <select name="category" id="category-select">
+                    </select> <br/><br/>
+                    Or enter a new category name: <br/>
+                    <input id="categoryInput" type="text" placeholder="Enter category's name"> <br/><br/> 
+                    Movie's description: <br/>
+                    <textarea id="movieDescription" name="description" rows="5" cols="33" minlength="5" maxlength="128" placeholder="Enter movie's description" spellcheck="true" required></textarea><br/><br/> 
+                    <a href="index.html"><input type="submit" id="formSubmitButton"></a>
+                </form>
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html
